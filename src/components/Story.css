@@ -1,0 +1,18 @@
+.story {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.625em 0;
+  padding: 0.625em;
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+}
+
+.story > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 0.3em;
+}
+
+.story > span + span {
+  border-left: 1px solid red;
+}

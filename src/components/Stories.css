@@ -1,0 +1,18 @@
+.stories {
+  margin: 1.625em 0;
+}
+.stories-header {
+  display: flex;
+  line-height: 1.5;
+  font-size: 1rem;
+  padding: 0 0.625em;
+}
+
+.stories-header > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 0.3em;
+}
+.stories-header > span + span {
+  border-left: 1px solid red;
+}

@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/App';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+const stories = [
+  {
+    title: 'React',
+    url: 'https://facebook.github.io/react',
+    author: 'Jordan Walke',
+    num_comments: 4,
+    points: 3,
+    objectId: 0
+  },
+  {
+    title: 'Redux',
+    url: 'https://redux.com',
+    author: 'Abramov',
+    num_comments: 5,
+    points: 2,
+    objectId: 1
+  }
+];
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <App stories={ stories } onArchive={ () => {} } />,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

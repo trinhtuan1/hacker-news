@@ -1,0 +1,6 @@
+.app {
+  margin: 1.25em;
+}
+.interaction, .error {
+  text-align: center;
+}
